@@ -64,7 +64,8 @@ const StyledNav = styled.nav`
 
   .logo {
     ${({ theme }) => theme.mixins.flexCenter};
-
+    margin-right: 20px;
+    
     a {
       color: var(--green);
       width: 30px;

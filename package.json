@@ -18,7 +18,9 @@
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",
-    "clean": "gatsby clean"
+    "clean": "gatsby clean",
+    "prepare": "husky install",
+    "lint-staged": "lint-staged"
   },
   "lint-staged": {
     "*.{js,css,json,md}": [

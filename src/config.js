@@ -18,16 +18,12 @@ module.exports = {
 
   navLinks: [
     {
+      name: 'Technology',
+      url: '/#technology',
+    },
+    {
       name: 'Platform',
-      url: '/#projects',
-    },
-    {
-      name: 'Solutions',
-      url: '/#jobs',
-    },
-    {
-      name: 'Contact',
-      url: '/#contact',
+      url: '/#platform',
     },
     {
       name: 'About',
