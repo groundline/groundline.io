@@ -15,10 +15,11 @@ const StyledContactSection = styled.section`
   .overline {
     display: block;
     margin-bottom: 20px;
-    color: var(--green);
-    font-family: var(--font-mono);
-    font-size: var(--fz-md);
-    font-weight: 400;
+    color: var(--white);
+    font-size: var(--fz-sm);    
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 3px;
 
     &:before {
       bottom: 0;

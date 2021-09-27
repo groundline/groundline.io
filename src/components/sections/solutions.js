@@ -16,7 +16,8 @@ const StyledProjectsSection = styled.section`
     font-size: clamp(24px, 5vw, var(--fz-heading));
   }
 
-  .archive-link {
+  .sub-header {
+    color: var(--white);
     font-family: var(--font-mono);
     font-size: var(--fz-sm);
     &:after {
@@ -266,9 +267,9 @@ const Projects = () => {
     <StyledProjectsSection>
       <h2 ref={revealTitle}>Solutions</h2>
 
-      <Link className="inline-link archive-link" ref={revealArchiveLink}>
+      <p className="inline-link sub-header" ref={revealArchiveLink}>
         Providing invaluable source of information and unique opportunities for different industries.
-      </Link>
+      </p>
 
       <ul className="projects-grid">
         {prefersReducedMotion ? (
