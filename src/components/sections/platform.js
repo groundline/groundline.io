@@ -12,6 +12,13 @@ const StyledAboutSection = styled.section`
   align-items: center;
   padding-bottom: 0;
 
+  .sub-header {
+    color: var(--white);
+    &:after {
+      bottom: 0.1em;
+    }
+  }
+
   .inner {
     display: grid;
     grid-template-columns: 3fr 2fr;
@@ -20,6 +27,11 @@ const StyledAboutSection = styled.section`
     @media (max-width: 768px) {
       display: block;
     }
+  }
+
+  .wrapper {
+    margin-top: 120px;
+
   }
 `;
 const StyledText = styled.div`
@@ -60,28 +72,10 @@ const StyledPic = styled.div`
   }
 
   .wrapper {
-    ${({ theme }) => theme.mixins.boxShadow};
     display: block;
     position: relative;
     width: 100%;
     border-radius: var(--border-radius);
-    background-color: var(--green);
-
-    &:hover,
-    &:focus {
-      background: transparent;
-      outline: 0;
-
-      &:after {
-        top: 15px;
-        left: 15px;
-      }
-
-      .img {
-        filter: none;
-        mix-blend-mode: normal;
-      }
-    }
 
     .img {
       position: relative;
@@ -148,9 +142,9 @@ const Platform = () => {
 
         <h2 >Explore Images</h2>
 
-        <Link className="inline-link archive-link" ref={revealSubheader}>
+        <p className="sub-header" ref={revealSubheader}>
           Search for the latest satellite and aerial imagery.
-        </Link>
+        </p>
 
         <div className="wrapper">
           <StaticImage
