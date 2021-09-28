@@ -1,12 +1,9 @@
 ---
 date: '2021-01-01'
 title: 'Agriculture'
+image: 'https://source.unsplash.com/l_5MJnbrmrs'
 github: ''
 external: ''
-tech:
-  - Lorem
-  - Ipsum
-  - Dolor
 company: ''
 showInProjects: true
 ---

@@ -140,7 +140,7 @@ const Footer = () => {
         <div class="footer-column footer-3">
           <h4>Company</h4>
           <p>About Us</p>
-          <p>Terms & COnditions</p>
+          <p>Terms & Conditions</p>
           <p>Privacy Policy</p>
         </div>
 

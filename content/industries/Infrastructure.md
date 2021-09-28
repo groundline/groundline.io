@@ -3,10 +3,7 @@ date: '2021-01-01'
 title: 'Government'
 github: ''
 external: ''
-tech:
-  - Lorem
-  - Ipsum
-  - Dolor
+image: 'https://source.unsplash.com/MccvfFiozoA'
 company: ''
 showInProjects: true
 ---

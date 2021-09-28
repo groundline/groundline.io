@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Link, useStaticQuery, graphql } from 'gatsby';
+import { StaticImage } from 'gatsby-plugin-image';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import styled from 'styled-components';
 import { srConfig } from '@config';
@@ -78,7 +79,6 @@ const StyledProject = styled.li`
 
   .project-top {
     ${({ theme }) => theme.mixins.flexBetween};
-    margin-bottom: 35px;
 
     .folder {
       color: var(--green);
@@ -179,9 +179,9 @@ const Projects = () => {
           node {
             frontmatter {
               title
-              tech
               github
               external
+              image
             }
             html
           }
@@ -213,52 +213,66 @@ const Projects = () => {
 
   const projectInner = node => {
     const { frontmatter, html } = node;
-    const { github, external, title, tech } = frontmatter;
+    const { github, external, title, image, tech } = frontmatter;
 
     return (
-      <div className="project-inner">
-        <header>
-          <div className="project-top">
-            <div className="folder">
-              <Icon name="Folder" />
-            </div>
-            <div className="project-links">
-              {github && (
-                <a href={github} aria-label="GitHub Link" target="_blank" rel="noreferrer">
-                  <Icon name="GitHub" />
-                </a>
-              )}
-              {external && (
-                <a
-                  href={external}
-                  aria-label="External Link"
-                  className="external"
-                  target="_blank"
-                  rel="noreferrer">
-                  <Icon name="External" />
-                </a>
-              )}
-            </div>
+      <div className="project-wrapper">
+
+        {image && (
+          <div className="">
+            <img
+              className="img"
+              src={image}
+            />
           </div>
+        )}
+        
+        <div className="project-inner">
+          <header>
+            <div className="project-top">
+              {/*
+              <div className="folder">
+                <Icon name="Folder" />
+              </div>
+              */}
+              <div className="project-links">
+                {github && (
+                  <a href={github} aria-label="GitHub Link" target="_blank" rel="noreferrer">
+                    <Icon name="GitHub" />
+                  </a>
+                )}
+                {external && (
+                  <a
+                    href={external}
+                    aria-label="External Link"
+                    className="external"
+                    target="_blank"
+                    rel="noreferrer">
+                    <Icon name="External" />
+                  </a>
+                )}
+              </div>
+            </div>
 
-          <h3 className="project-title">
-            <a href={external} target="_blank" rel="noreferrer">
-              {title}
-            </a>
-          </h3>
+            <h3 className="project-title">
+              <a href={external} target="_blank" rel="noreferrer">
+                {title}
+              </a>
+            </h3>
 
-          <div className="project-description" dangerouslySetInnerHTML={{ __html: html }} />
-        </header>
+            <div className="project-description" dangerouslySetInnerHTML={{ __html: html }} />
+          </header>
 
-        <footer>
-          {tech && (
-            <ul className="project-tech-list">
-              {tech.map((tech, i) => (
-                <li key={i}>{tech}</li>
-              ))}
-            </ul>
-          )}
-        </footer>
+          <footer>
+            {tech && (
+              <ul className="project-tech-list">
+                {tech.map((tech, i) => (
+                  <li key={i}>{tech}</li>
+                ))}
+              </ul>
+            )}
+          </footer>
+        </div>
       </div>
     );
   };
