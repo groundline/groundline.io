@@ -5,7 +5,7 @@ import sr from '@utils/sr';
 import { usePrefersReducedMotion } from '@hooks';
 
 const StyledContactSection = styled.section`
-  margin: 0 auto 100px;
+  margin: 0 auto;
   text-align: left;
   color: var(--dark-navy);
 
