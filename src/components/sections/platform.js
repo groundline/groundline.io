@@ -75,6 +75,7 @@ const Platform = () => {
 
   return (
     <div 
+      id="platform"
       className="relative overflow-hidden" 
       style={{
         backgroundImage: 'linear-gradient(to bottom, rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.9)), url(https://source.unsplash.com/HWIOLU7_O6w)',
@@ -83,7 +84,7 @@ const Platform = () => {
         backgroundPosition: 'center',
       }}
     >
-      <StyledPlatformSection id="platform" ref={revealContainer}>
+      <StyledPlatformSection ref={revealContainer}>
 
         <h4 className="overline">Coming Soon</h4>
 

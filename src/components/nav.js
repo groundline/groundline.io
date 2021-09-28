@@ -189,7 +189,7 @@ const Nav = ({ isHome }) => {
   );
 
   const ContactLink = (
-    <a className="contained-button" href="/" target="_blank" rel="noopener noreferrer">
+    <a className="contained-button" href="/#contact" target="_blank" rel="noopener noreferrer">
       Contact
     </a>
   );

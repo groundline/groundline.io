@@ -73,7 +73,7 @@ const Hero = () => {
     </>
   );
   const three = (
-    <a className="cta" href="/request-demo" rel="noreferrer">
+    <a className="cta" href="/#about" rel="noreferrer">
       Learn More
     </a>
   );

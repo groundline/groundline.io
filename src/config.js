@@ -19,15 +19,15 @@ module.exports = {
   navLinks: [
     {
       name: 'Technology',
-      url: '/#technology',
+      url: '/#about',
     },
     {
       name: 'Platform',
       url: '/#platform',
     },
     {
-      name: 'About',
-      url: '/#about',
+      name: 'Solutions',
+      url: '/#solutions',
     },
   ],
 
