@@ -11,7 +11,6 @@ const StyledHeroSection = styled.section`
   flex-direction: column;
   align-items: flex-start;
   min-height: 100vh;
-  padding: 0;
 
   @media (max-width: 480px) and (min-height: 700px) {
     padding-bottom: 10vh;
