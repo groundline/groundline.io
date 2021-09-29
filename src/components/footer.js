@@ -10,9 +10,7 @@ const StyledFooter = styled.footer`
   ${({ theme }) => theme.mixins.flexCenter};
   flex-direction: column;
   height: auto;
-  padding: 15px;
   text-align: center;
-  padding: 20px;
   margin: 50px 0;
 
   .footer-grid {
@@ -34,22 +32,30 @@ const StyledFooter = styled.footer`
     }
   }
 
-  .footer-details {
-    text-align: center;
-  }
-  
-  @media (max-width: 1024px) {
+  @media (max-width: 768px) {
     .footer-grid {
-      padding-left: 20px;
+      width: 100%;
+      padding: 25px;
     }
   }
 
+  @media (max-width: 480px) {
+    .footer-grid {
+      width: 100%;
+      padding: 25px;
+    }
+  }
+
+  .footer-details {
+    text-align: center
+  }
+  
   .logo {
     display: contents;
     margin-bottom: 20px;
 
     a {
-      width: 20px;
+      width: 15px;
     }
 
     .logo-text {
@@ -92,7 +98,7 @@ const Logo = (
     <Link to="/" aria-label="home">
       <IconLogo style = {{ width: "inherit", height:"inherit"}} />
     </Link>
-    <span className="logo-text">Groundline</span>
+    <span className="logo-text">Groundline Technologies</span>
   </div>
 );
 
@@ -145,7 +151,6 @@ const Footer = () => {
         </div>
 
         <div class="footer-column footer-details">
-          <div class="logo-wrapper">{Logo}</div>
           <StyledSocialLinks>
             <ul>
               {socialMedia &&
@@ -158,6 +163,7 @@ const Footer = () => {
                 ))}
             </ul>
           </StyledSocialLinks>
+          <div class="logo-wrapper">{Logo}</div>
           <p>© 2021. All Rights Reserved</p>
         </div>
       </div>
