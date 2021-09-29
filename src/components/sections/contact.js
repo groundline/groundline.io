@@ -15,6 +15,11 @@ const StyledContactSection = styled.section`
 
   @media (max-width: 768px) {
     margin: 0 auto 50px;
+    display: block;
+  }
+
+  .contact-details {
+    margin-bottom: 20px;
   }
 
   .overline {
@@ -96,7 +101,7 @@ const Contact = () => {
     <div style={{backgroundColor: '#FFFFFF'}}>
       <StyledContactSection id="contact" ref={revealContainer}>
 
-        <div>
+        <div className="contact-details">
           <h4 className="numbered-heading overline">Contact Us</h4>
           <h2 className="title">Get In Touch</h2>
 
