@@ -85,7 +85,7 @@ const Hero = () => {
         backgroundImage: 'linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)), url('+imagePath+')',
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'cover',
-        backgroundPosition: 'left',
+        backgroundPosition: 'center',
       }}
     >
       <StyledHeroSection>
