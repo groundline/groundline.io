@@ -46,7 +46,7 @@ const StyledHamburgerButton = styled.button`
     width: var(--hamburger-width);
     height: 2px;
     border-radius: var(--border-radius);
-    background-color: var(--green);
+    background-color: var(--white);
     transition-duration: 0.22s;
     transition-property: transform;
     transition-delay: ${props => (props.menuOpen ? `0.12s` : `0s`)};
@@ -64,7 +64,7 @@ const StyledHamburgerButton = styled.button`
       width: var(--hamburger-width);
       height: 2px;
       border-radius: 4px;
-      background-color: var(--green);
+      background-color: var(--white);
       transition-timing-function: ease;
       transition-duration: 0.15s;
       transition-property: transform;
@@ -130,7 +130,7 @@ const StyledSidebar = styled.aside`
       @media (max-width: 600px) {
         margin: 0 auto 10px;
       }
-
+/*
       &:before {
         content: '0' counter(item) '.';
         display: block;
@@ -138,6 +138,7 @@ const StyledSidebar = styled.aside`
         color: var(--green);
         font-size: var(--fz-sm);
       }
+*/
     }
 
     a {
@@ -147,7 +148,7 @@ const StyledSidebar = styled.aside`
     }
   }
 
-  .resume-link {
+  .contact-us {
     ${({ theme }) => theme.mixins.bigButton};
     padding: 18px 50px;
     margin: 10% auto 0;
@@ -266,8 +267,8 @@ const Menu = () => {
               </ol>
             )}
 
-            <a href="/resume.pdf" className="resume-link">
-              Resume
+            <a href="/#contact" onClick={() => setMenuOpen(false)} className="contact-us">
+              Contact Us
             </a>
           </nav>
         </StyledSidebar>
