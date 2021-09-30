@@ -2,7 +2,7 @@ const config = require('./src/config');
 
 module.exports = {
   siteMetadata: {
-    title: 'Groundline',
+    title: 'Groundline | Geospatial monitoring and analysis',
     description: 'Geospatial monitoring and analysis',
     siteUrl: 'https://groundline.io', // No trailing slash allowed!
     image: '/og.png', // Path to your image you placed in the 'static' folder
