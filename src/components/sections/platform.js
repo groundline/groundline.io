@@ -88,7 +88,7 @@ const Platform = () => {
 
         <h4 className="overline">Coming Soon</h4>
 
-        <h2 >Mapping and image explorer</h2>
+        <h2 >Mapping and Image Explorer</h2>
 
         <p className="sub-header" ref={revealSubheader}>
           Monitor fields and remote assets using imagery and data visualization.
