@@ -8,4 +8,4 @@ company: ''
 showInProjects: true
 ---
 
-Monitor forestry, wild animal sanctuary and other high-risk areas.
+Monitor forestry, wild animal sanctuary, bodies of water and other high-risk areas affected by climate change.

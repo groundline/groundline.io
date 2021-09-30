@@ -1,12 +1,11 @@
 ---
 date: '2021-01-01'
-title: 'Government'
+title: 'Infrastructure'
+image: 'https://source.unsplash.com/gMsdOPBE7dQ'
 github: ''
 external: ''
-image: 'https://source.unsplash.com/MccvfFiozoA'
 company: ''
 showInProjects: true
 ---
 
-Government regulatory agencies uses aerial surveillance to identify non-compliance and help create better policies 
-that will benefit its constituents.
+Remotely monitor infrastructures to speed up maintenance and eliminate manual assessment for areas that are difficult to access.

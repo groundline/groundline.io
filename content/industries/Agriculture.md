@@ -8,5 +8,4 @@ company: ''
 showInProjects: true
 ---
 
-Farm owners and agricultural companies are constantly monitoring fields to create a better crop management plan.
-Through remote sensing, it gives them an overview and effective monitoring of crops at a given timeframe.
+Remote sensing provides farmersand agriculture companies an overview and effective monitoring of crops at a given timeframe.
