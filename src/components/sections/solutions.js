@@ -277,8 +277,8 @@ const Projects = () => {
   };
 
   return (
-    <StyledProjectsSection id="solutions">
-      <h2 ref={revealTitle}>Solutions</h2>
+    <StyledProjectsSection id="industries">
+      <h2 ref={revealTitle}>Industries</h2>
 
       <p className="inline-link sub-header" ref={revealArchiveLink}>
         Providing invaluable source of information and unique opportunities for different industries.

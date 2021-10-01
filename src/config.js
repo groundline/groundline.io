@@ -26,8 +26,8 @@ module.exports = {
       url: '/#platform',
     },
     {
-      name: 'Solutions',
-      url: '/#solutions',
+      name: 'Industries',
+      url: '/#industries',
     },
   ],
 
