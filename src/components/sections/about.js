@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import { srConfig } from '@config';
 import sr from '@utils/sr';
 import { usePrefersReducedMotion } from '@hooks';
+import bgPath from '../../images/space-bg.png';
 
 const StyledAboutSection = styled.section`
 
@@ -20,7 +21,7 @@ const StyledAboutSection = styled.section`
 const StyledText = styled.div`
   ul.skills-list {
     display: grid;
-    grid-template-columns: repeat(2, minmax(140px, 200px));
+    grid-template-columns: repeat(2, minmax(140px, 300px));
     grid-gap: 0 10px;
     padding: 0;
     margin: 20px 0 0 0;
@@ -125,45 +126,61 @@ const About = () => {
     sr.reveal(revealContainer.current, srConfig());
   }, []);
 
-  const skills = ['High altitude', 'Wow', 'So much geospatial', 'Eleventy', 'Amazing', 'Very space'];
+  const skills = [
+    'Crop monitoring',
+    'Disaster response',
+    'Infrastructure management',
+    'Situational awareness',
+    'Environmental protection', 
+    'and more...'
+  ];
 
   return (
-    <StyledAboutSection id="about" ref={revealContainer}>
-      <h2 className="numbered-heading">The Project</h2>
-
-      <div className="inner">
-        <StyledText>
-          <div>
-            <p>
-             Lorem ipsum dolor Lorem ipsum dolorLorem ipsum dolorLorem ipsum dolorLorem ipsum dolorLorem ipsum dolorLorem ipsum dolorLorem ipsum dolor
-            </p>
-
-            <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
-
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit:</p>
-          </div>
-
-          <ul className="skills-list">
-            {skills && skills.map((skill, i) => <li key={i}>{skill}</li>)}
-          </ul>
-        </StyledText>
-
-        <StyledPic>
+    <div 
+      style={{
+        backgroundImage: 'linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2)), url('+bgPath+')',
+        backgroundRepeat: 'no-repeat',
+        backgroundSize: 'cover',
+        backgroundPosition: 'left',
+      }}
+    >
+      <StyledAboutSection id="about" ref={revealContainer}>
+        <div className="inner">
           <div className="wrapper">
             <StaticImage
               className="img"
-              src="https://source.unsplash.com/OgVT4yfpIxk"
+              src="../../images/balloon.svg"
               width={500}
               quality={95}
               formats={['AUTO', 'WEBP', 'AVIF']}
-              alt="Headshot"
+              alt="High-altitude Balloon"
             />
           </div>
-        </StyledPic>
-      </div>
-    </StyledAboutSection>
+
+          <StyledText>
+            <h2 className="numbered-heading">High-altitude balloons + A.I.</h2>
+            <div>
+              <p>
+              Groundline leverage high-altitude balloons to collect near space imagery and other atmospheric data for enterprise and reasearch.
+              </p>
+
+              <p>
+              As compared to satellites, flying a balloon above 100,000 feet produces sharper and clearer images at a fraction of the cost. Unlike UAV, 
+              stratospheric balloons can provide high resolution imagery within a wide range of area in a single mission. 
+              </p>
+
+              <p>When combined with machine learning and A.I. tools, aerial imagery can produce vast amount of information and generates invaluable insights for different applications.</p>
+            </div>
+
+            <ul className="skills-list">
+              {skills && skills.map((skill, i) => <li key={i}>{skill}</li>)}
+            </ul>
+          </StyledText>
+
+
+        </div>
+      </StyledAboutSection>
+    </div>
   );
 };
 

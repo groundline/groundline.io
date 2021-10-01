@@ -192,7 +192,7 @@ const GlobalStyle = createGlobalStyle`
       display: block;
       position: relative;
       top: -5px;
-      width: 300px;
+      width: 200px;
       height: 1px;
       margin-left: 20px;
       background-color: var(--lightest-navy);
