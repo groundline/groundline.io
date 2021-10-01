@@ -4,15 +4,15 @@ module.exports = {
   socialMedia: [
     {
       name: 'GitHub',
-      url: 'https://github.com/groundline',
+      url: 'https://github.com',
     },
     {
       name: 'Twitter',
-      url: 'https://twitter.com/groundline',
+      url: 'https://twitter.com',
     },
     {
       name: 'Linkedin',
-      url: 'https://www.linkedin.com/in/groundline',
+      url: 'https://www.linkedin.com/in',
     },
   ],
 
