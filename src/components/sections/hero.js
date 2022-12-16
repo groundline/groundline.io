@@ -60,7 +60,8 @@ const Hero = () => {
 
   const one = (
     <h2 className="medium-heading">
-      Building the next generation of geospatial monitoring and analysis
+      {/* Building the next generation of geospatial monitoring and analysis */}
+	  Building the future of work... remotely.
     </h2>
   );
   const two = (
@@ -77,7 +78,7 @@ const Hero = () => {
     </a>
   );
 
-  const items = [one, two, three];
+  const items = [one];
 
   return (
     <div 

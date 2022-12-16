@@ -17,6 +17,7 @@ module.exports = {
   ],
 
   navLinks: [
+	  /*
     {
       name: 'Technology',
       url: '/#about',
@@ -29,6 +30,7 @@ module.exports = {
       name: 'Industries',
       url: '/#industries',
     },
+	*/
   ],
 
   colors: {
